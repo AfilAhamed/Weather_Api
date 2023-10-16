@@ -45,9 +45,9 @@ class HomeScreen extends StatelessWidget {
                       "${provider.data!.cityName}",
                       style: const TextStyle(fontSize: 46),
                     ),
-                    // const Divider(
-                    //   thickness: 1,
-                    // ),
+                    const SizedBox(
+                      height: 20,
+                    ),
                     Text('Additional information',
                         style: TextStyle(
                             fontSize: 30, color: Colors.grey.shade700)),

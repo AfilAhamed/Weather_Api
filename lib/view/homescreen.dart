@@ -120,72 +120,93 @@ class HomeScreen extends StatelessWidget {
                               ),
                               const SizedBox(
                                 height: 50,
-                              ),
-                              Card(
-                                color: Colors.transparent,
-                                child: Column(
-                                  children: [
-                                    Text('Additional information',
-                                        style: TextStyle(
-                                            fontSize: 30,
-                                            color: Colors.grey.shade700)),
-                                    const Divider(
-                                      thickness: 1,
-                                    ),
-                                    const SizedBox(
-                                      height: 20,
-                                    ),
-                                    Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
+                              ), //-
+                              Padding(
+                                padding:
+                                    const EdgeInsets.only(left: 5, right: 5),
+                                child: Card(
+                                  color:
+                                      const Color.fromARGB(235, 57, 137, 203),
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(
+                                        left: 5, right: 5),
+                                    child: Column(
                                       children: [
-                                        Column(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.center,
-                                            children: [
-                                              Text(
-                                                "Wind: ${provider.data!.wind} km/h",
-                                                style: const TextStyle(
-                                                    fontSize: 25,
-                                                    fontWeight:
-                                                        FontWeight.w400),
-                                              ),
-                                              const SizedBox(
-                                                height: 18,
-                                              ),
-                                              Text(
-                                                "Pressure: ${provider.data!.pressure}",
-                                                style: const TextStyle(
-                                                    fontSize: 25,
-                                                    fontWeight:
-                                                        FontWeight.w400),
-                                              ),
-                                            ]),
                                         const SizedBox(
-                                          width: 40,
+                                          height: 10,
                                         ),
-                                        Column(
+                                        const Text('Additional information',
+                                            style: TextStyle(
+                                                fontSize: 30,
+                                                color: Colors.white)),
+                                        const Divider(
+                                          thickness: 1,
+                                        ),
+                                        const SizedBox(
+                                          height: 20,
+                                        ),
+                                        Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
                                           children: [
-                                            Text(
-                                              "Humidity: ${provider.data!.humidity}%",
-                                              style: const TextStyle(
-                                                  fontSize: 25,
-                                                  fontWeight: FontWeight.w400),
-                                            ),
+                                            Column(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
+                                                children: [
+                                                  Text(
+                                                    "Wind: ${provider.data!.wind} km/h",
+                                                    style: const TextStyle(
+                                                        color: Colors.white,
+                                                        fontSize: 25,
+                                                        fontWeight:
+                                                            FontWeight.w400),
+                                                  ),
+                                                  const SizedBox(
+                                                    height: 25,
+                                                  ),
+                                                  Text(
+                                                    "Pressure: ${provider.data!.pressure}",
+                                                    style: const TextStyle(
+                                                        color: Colors.white,
+                                                        fontSize: 25,
+                                                        fontWeight:
+                                                            FontWeight.w400),
+                                                  ),
+                                                ]),
                                             const SizedBox(
-                                              height: 18,
+                                              width: 30,
                                             ),
-                                            Text(
-                                              "Feels Like: ${provider.data!.feels_like}",
-                                              style: const TextStyle(
-                                                  fontSize: 25,
-                                                  fontWeight: FontWeight.w400),
-                                            ),
+                                            Column(
+                                              children: [
+                                                Text(
+                                                  "Humidity: ${provider.data!.humidity}%",
+                                                  style: const TextStyle(
+                                                      color: Colors.white,
+                                                      fontSize: 25,
+                                                      fontWeight:
+                                                          FontWeight.w400),
+                                                ),
+                                                const SizedBox(
+                                                  height: 25,
+                                                ),
+                                                Text(
+                                                  "Feels Like: ${provider.data!.feels_like}",
+                                                  style: const TextStyle(
+                                                      color: Colors.white,
+                                                      fontSize: 25,
+                                                      fontWeight:
+                                                          FontWeight.w400),
+                                                ),
+                                              ],
+                                            )
                                           ],
+                                        ),
+                                        SizedBox(
+                                          height: 50,
                                         )
                                       ],
-                                    )
-                                  ],
+                                    ),
+                                  ),
                                 ),
                               )
                             ],

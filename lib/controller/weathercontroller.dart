@@ -9,9 +9,9 @@ class WeatherController extends ChangeNotifier {
   final nameController = TextEditingController();
   String countryName = 'london';
 
-  searchCountry() {
+  searchCountry(value) {
     getdata();
-    countryName = nameController.text;
+    countryName = value;
     countryName;
 
     notifyListeners();

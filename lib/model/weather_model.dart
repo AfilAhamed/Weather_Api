@@ -1,6 +1,6 @@
 class Weather {
   String? cityName;
-  double? temp;
+  dynamic temp;
   double? wind;
   int? humidity;
   double? feels_like;

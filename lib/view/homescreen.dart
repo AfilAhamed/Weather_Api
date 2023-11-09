@@ -91,7 +91,8 @@ class HomeScreen extends StatelessWidget {
                                     ),
                                     controller: provider.nameController,
                                     onFieldSubmitted: (value) {
-                                      provider.searchCountry(value);
+                                      provider.searchCountry(
+                                          value.trim().toLowerCase());
                                     },
                                   ),
                                 ),

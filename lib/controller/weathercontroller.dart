@@ -12,7 +12,7 @@ class WeatherController extends ChangeNotifier {
   searchCountry(value) {
     getdata();
     countryName = value;
-    countryName;
+    //countryName;
 
     notifyListeners();
   }
